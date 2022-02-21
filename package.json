@@ -1,0 +1,27 @@
+{
+  "name": "fullstackopen2021-part3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomRadford/FullStackOpen2021-Part3.git"
+  },
+  "author": "Tom Radford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomRadford/FullStackOpen2021-Part3/issues"
+  },
+  "homepage": "https://github.com/TomRadford/FullStackOpen2021-Part3#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
