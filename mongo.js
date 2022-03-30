@@ -6,8 +6,8 @@ if ((process.argv.length < 5) && !(process.argv.length === 3)) {
     process.exit()
 }
 
-password = process.argv[2]
-url =
+const password = process.argv[2]
+const url =
     `mongodb+srv://fullstack:${password}@fullstack.qrmkt.mongodb.net/peopleApp?retryWrites=true&w=majority`
 mongoose.connect(url)
 
@@ -33,8 +33,8 @@ if (process.argv.length === 3) {
 }
 
 
-personName = process.argv[3]
-personNumber = process.argv[4]
+const personName = process.argv[3]
+const personNumber = process.argv[4]
 
 
 const person = new Person({
