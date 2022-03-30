@@ -11,8 +11,22 @@ mongoose.connect(uri)
 })
 
 const personSchema = mongoose.Schema({
-    name: String,
-    number: String
+    name: {
+        type: String,
+        minLength: 3,
+        required: true
+    },
+    number: {
+        type: String,
+        minLength: 8,
+        validate: {
+            validator: (v) => {
+                return ((v[2] === '-') || (v[3] === '-') )
+            },
+            message: props => `${props.value} is missing the '-' symbol after the first or second digit.`
+        },
+        required: true
+    }
 })
 
 personSchema.set('toJSON', {
